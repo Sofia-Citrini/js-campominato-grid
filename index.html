@@ -18,9 +18,14 @@
             <h1>Campo Minato</h1>
 
             <div>
-                <form>
-                    <!-- Bonus: select -->
-                    <button type="submit" class="btn-play btn btn-primary">Play</button>
+                <form class="d-flex gap-3">
+                    <select name="difficulty" class="form-select" aria-label="Default select example">
+                        <option selected>Difficoltá</option>
+                        <option value="1">Difficoltá 1</option>
+                        <option value="2">Difficoltá 2</option>
+                        <option value="3">Difficoltá 3</option>
+                    </select>
+                    <button type="button" id="btn-play" class="btn btn-primary">Play</button>
                 </form>
             </div>
         </div>
@@ -28,9 +33,7 @@
 
     <main class="bg-light py-3">
         <div class="container">
-            <div  id="grid-container" class="d-flex flex-wrap">
-            
-            </div>
+            <div  id="grid-container" class="d-flex flex-wrap"></div>
         </div>
     </main>
     

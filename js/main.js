@@ -1,7 +1,8 @@
-const btnPlay = document.querySelector('.btn-play');
+const btnPlay = document.getElementById('btn-play');
+const inputDifficulty = document.getElementById("[name='difficulty']");
 
 btnPlay.addEventListener('click', function () {
-
+    console.log(this);
     createGrid(10);
 })
 
@@ -23,12 +24,12 @@ function createGrid(celle) {
 
         // click:cambio colore + messaggio in console 
         newCell.addEventListener('click', function () {
-            newCell.classList.add("bg-primary");
+            newCell.classList.toggle("bg-primary");
 
+            console.log(i + 1)
         })
 
         grid.append(newCell);
     }
-
-
 }
+
